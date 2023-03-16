@@ -1,0 +1,29 @@
+---
+import HomeHero from "../components/Hero/HomeHero.astro";
+import Layout from "../layouts/Layout.astro";
+
+import BenefitSection from "../sections/home-sections/BenefitSection.astro";
+import CtaSection from "../sections/CtaSection1.astro";
+import FAQSection from "../sections/FAQSection";
+import AboutCompanySection from "../sections/AboutCompanySection.astro";
+import ServicesSection from "../sections/ServicesSection.astro";
+import TrustSection from "../sections/TrustSection.astro";
+import PricingSection from "../sections/PricingSection.astro";
+import WhyChooseUsSection from "../sections/WhyChooseUsSection.astro";
+import FactNumbersSection from "../sections/FactNumbersSection.astro";
+---
+
+<Layout title="TimelineInvetment">
+	<HomeHero />
+	<AboutCompanySection />
+	<ServicesSection />
+	<TrustSection />
+	<PricingSection />
+	<BenefitSection />
+	<WhyChooseUsSection />
+	<FactNumbersSection addMargin={false} />
+	<FAQSection client:only />
+	<CtaSection />
+</Layout>
+
+<style></style>
